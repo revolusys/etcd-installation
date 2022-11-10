@@ -25,8 +25,6 @@ sudo useradd -s /sbin/nologin --system -g etcd etcd
 
 sudo chown -R etcd:etcd /var/lib/etcd/
 
-sudo vim /etc/systemd/system/etcd.service
-
 sudo cat > /etc/systemd/system/etcd.service <<EOF
 [Unit]
 Description=etcd key-value store
