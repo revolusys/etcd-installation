@@ -69,7 +69,7 @@ cat > etcd-csr.json <<EOF
   ],
   "key": {
     "algo": "rsa",
-    "size": 4096
+    "size": 2046
   },
   "names": [
     {
