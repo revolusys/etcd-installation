@@ -1,11 +1,13 @@
 #!/bin/bash
 
-wget -q --show-progress \
-    https://storage.googleapis.com/kubernetes-the-hard-way/cfssl/1.6.1/linux/cfssl \
-    https://storage.googleapis.com/kubernetes-the-hard-way/cfssl/1.6.1/linux/cfssljson
+{
+  wget -q --show-progress \
+    https://storage.googleapis.com/kubernetes-the-hard-way/cfssl/1.4.1/linux/cfssl \
+    https://storage.googleapis.com/kubernetes-the-hard-way/cfssl/1.4.1/linux/cfssljson
   
-sudo chmod +x cfssl cfssljson
-sudo mv cfssl cfssljson /opt/bin/
+  chmod +x cfssl cfssljson
+  sudo mv cfssl cfssljson /opt/bin/
+}
 
 
 cat > ca-config.json <<EOF
