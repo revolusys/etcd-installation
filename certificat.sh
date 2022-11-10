@@ -31,7 +31,7 @@ cat > ca-csr.json <<EOF
   "CN": "etcd cluster",
   "key": {
     "algo": "rsa",
-    "size": 2048
+    "size": 4096
   },
   "names": [
     {
@@ -69,7 +69,7 @@ cat > etcd-csr.json <<EOF
   ],
   "key": {
     "algo": "rsa",
-    "size": 2046
+    "size": 4096
   },
   "names": [
     {
