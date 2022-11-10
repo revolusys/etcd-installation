@@ -34,11 +34,11 @@ cat > ca-csr.json <<EOF
   },
   "names": [
     {
-      "C": "GB",
+      "C": "US",
       "L": "England",
       "O": "Kubernetes",
       "OU": "ETCD-CA",
-      "ST": "Cambridge"
+      "ST": "Washington"
     }
   ]
 }
@@ -72,11 +72,11 @@ cat > etcd-csr.json <<EOF
   },
   "names": [
     {
-      "C": "GB",
+      "C": "US",
       "L": "England",
       "O": "Kubernetes",
       "OU": "etcd",
-      "ST": "Cambridge"
+      "ST": "Washington"
     }
   ]
 }
